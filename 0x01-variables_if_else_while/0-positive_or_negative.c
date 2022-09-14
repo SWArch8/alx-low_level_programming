@@ -7,14 +7,10 @@
 
 
 /**
-
- * main - entry point
-
+ *main - entry point
  *
-
- * Return: always return a 0
-
- */
+ *Return: always return a 0
+*/
 
 int main(void)
 
