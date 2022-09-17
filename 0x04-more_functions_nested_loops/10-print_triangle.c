@@ -29,5 +29,5 @@ while (i <= size && size > 0)
 		i++;
 	}
 	if (i == 1)
-		_putchar('\n')
+		_putchar('\n');
 }
