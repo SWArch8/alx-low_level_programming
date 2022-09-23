@@ -2,9 +2,9 @@
 
 
 /**
- * print_number - Prints any integer with putchar
- * @n: Number to prints
- * Return: integer
+* print_number - Prints any integer with putchar
+* @n: Number to prints
+* Return: integer
 */
 
 void print_number(int n)
