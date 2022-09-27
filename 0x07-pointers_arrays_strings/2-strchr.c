@@ -5,8 +5,9 @@
  * * @s: string given
  * * @c: another char
  * * Return: a string
- */
+*/
 char *_strchr(char *s, char c)
+
 {
 	int a;
 
