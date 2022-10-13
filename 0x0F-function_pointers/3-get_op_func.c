@@ -1,12 +1,13 @@
 #include "3-calc.h"
-#include <stdlib.h>
+#include <string.h>
 
 /**
- * * get_op_func - select the correct operation function asked by user
- * * @m: operator argument
- * * Return: function pointer pointing to operator given
+ * get_op_func - selects the correct operation toperform
+ * @s: operation to perform
+ *
+ * Return: pointer to the correct function
  */
-int (*get_op_func(char *m))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -16,9 +17,14 @@ int (*get_op_func(char *m))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int n = 0;
+	int i;
 
-	while (ops[n].op != NULL && *(ops[n].op) != *m)
-		n++;
-	return (ops[n].f);
+	i = 0;
+	while (ops[i].op != NULL)
+	{
+		if (strcmp(s, ops[i].op) == 0)
+			break;
+		i++;
+	}
+	return (ops[i].f);
 }
