@@ -1,1 +1,1 @@
-all about variadic functions in C
+All about variadic functions in C
